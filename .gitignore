@@ -1,0 +1,33 @@
+large-assets/
+
+
+# Node modules (if using Node.js)
+node_modules/
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Build output
+dist/
+build/
+
+# Environment variables
+.env
+
+# IDE files (Visual Studio Code, etc.)
+.vscode/
+.idea/
+
+# Dependency folders (if you use package managers)
+bower_components/
+
+# npm-debug files
+npm-debug.log*
+
+# Mac OS metadata files
+.AppleDouble
+.LSOverride
