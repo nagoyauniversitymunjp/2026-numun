@@ -70,15 +70,21 @@ body, html {
 }
 
 .hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 0.5em;
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    font-size: 3rem;
+    margin-bottom: 0.5em;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
 }
 
 .hero-content p {
-  font-size: 1.5rem;
-  margin-bottom: 1.5em;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+    font-size: 1.5rem;
+    margin-bottom: 1.5em;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+.hero-content-buttons {
+    list-style: none;
+    display: flex;
+    gap: 40px;
 }
 
 .register-now {
@@ -93,6 +99,21 @@ body, html {
 }
 
 .register-now:hover {
+  background-color: #cc5200;
+}
+
+.btn-regular {
+  background-color: #ffae00;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
+}
+
+.btn-regular:hover {
   background-color: #cc5200;
 }
 
