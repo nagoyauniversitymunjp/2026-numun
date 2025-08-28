@@ -3,35 +3,51 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>NUMUN</title>
+    <title>Nagoya University MUN</title>
     <link rel="stylesheet" href="css/home-style.css" />
-
 </head>
-<body>
 
-    <!-- Hero Banner -->
+
+<body>
 
     <header class="hero-header">
 
         <nav class="nav-logo">
 
-            <div class="logo">
-                NUMUN
-            </div>
+            <div class="logo">NUMUN</div>
 
-
-            <ul class="nav-links">
+            <!-- DESKTOP & TABLET ONLY: links to socials -->
+            <ul class="nav-logo-links">
                 <li><a href="#about" class="register-now">Register Now!</a></li>
                 <li><a href="#">Instagram</a></li>
                 <li><a href="#aboutus">YouTube</a></li>
                 <li><a href="#numun2026">LinkedIn</a></li>
             </ul>
 
+            <!-- MOBILE & TABLET ONLY: hamburger -->
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+            </div>
+
+            <div class="overlay" id="overlay">
+                <ul class="hamburger-links" id="hamburger-links">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#aboutus">ABOUT US</a></li>
+                    <li><a href="#numun2026">NUMUN 2026</a></li>
+                    <li><a href="#team">TEAM</a></li>
+                    <li><a href="#sponsors">SPONSORS & PARTNERS</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#contactus">CONTACT US</a></li>
+                </ul>
+            </div>
+            
         </nav>
 
+        <!-- DESKTOP ONLY: links to other pages stuck to page -->
         <nav class="nav-pages">
 
-            <ul class="nav-links">
+            <ul class="nav-pages-links">
                 <li><a href="#">HOME</a></li>
                 <li><a href="#aboutus">ABOUT US</a></li>
                 <li><a href="#numun2026">NUMUN 2026</a></li>
@@ -40,15 +56,14 @@
                 <li><a href="#gallery">GALLERY</a></li>
                 <li><a href="#contactus">CONTACT US</a></li>
             </ul>
-            <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
-            </svg>
 
         </nav>
 
+        <!-- ALL: hero content (main stuff) -->
         <div class="hero-content">
             <h1>NUMUN 2026</h1>
-            <p>Lorem ipsum</p>
+            <h2>Coming in Spring!</h2>
+            <h3>Now recruiting staff!</h3>
             <ul class="hero-content-buttons">
                 <li><a href="#about" class="register-now">Register Now!</a></li>
                 <li><a href="#about" class="btn-regular">Explore Committees</a></li>
@@ -56,6 +71,18 @@
         </div>
 
     </header>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const hamburgerLinks = document.getElementById('hamburger-links');
+        const overlay = document.getElementById("overlay");
+
+        hamburger.addEventListener('click', () => {
+            hamburgerLinks.classList.toggle('active');
+            hamburger.classList.toggle("active");
+            overlay.classList.toggle("active");
+        });
+    </script>
 
 </body>
 </html>
